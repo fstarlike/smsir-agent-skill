@@ -52,7 +52,7 @@ smsir-agent-skill/
 
 ## نصب در Cursor
 
-> بعد از ساخته‌شدن ریپازیتوری GitHub، در دستورهای زیر مقدار `REPO_URL` را با URL واقعی همان ریپازیتوری جایگزین کنید.
+> آدرس رسمی این Skill: `https://github.com/fstarlike/smsir-agent-skill`
 
 ### روش ۱ — نصب مستقیم از GitHub داخل رابط Cursor
 
@@ -70,7 +70,7 @@ Cursor ساختار Agent Skills را می‌شناسد و `SKILL.md` را بر�
 داخل ریشه پروژه:
 
 ```bash
-REPO_URL=<YOUR_GITHUB_REPOSITORY_URL>
+REPO_URL=https://github.com/fstarlike/smsir-agent-skill.git
 mkdir -p .cursor/skills
 git clone "$REPO_URL" .cursor/skills/smsir-agent-skill
 ```
@@ -91,7 +91,7 @@ YOUR_PROJECT/
 ### روش ۳ — نصب سراسری Cursor
 
 ```bash
-REPO_URL=<YOUR_GITHUB_REPOSITORY_URL>
+REPO_URL=https://github.com/fstarlike/smsir-agent-skill.git
 mkdir -p ~/.cursor/skills
 git clone "$REPO_URL" ~/.cursor/skills/smsir-agent-skill
 ```
@@ -105,7 +105,7 @@ Cursor در حال حاضر این مسیرها را برای Skillها می‌�
 در ریشه پروژه:
 
 ```bash
-REPO_URL=<YOUR_GITHUB_REPOSITORY_URL>
+REPO_URL=https://github.com/fstarlike/smsir-agent-skill.git
 mkdir -p .claude/skills
 git clone "$REPO_URL" .claude/skills/smsir-agent-skill
 ```
@@ -124,7 +124,7 @@ YOUR_PROJECT/
 ### Skill شخصی/سراسری Claude Code
 
 ```bash
-REPO_URL=<YOUR_GITHUB_REPOSITORY_URL>
+REPO_URL=https://github.com/fstarlike/smsir-agent-skill.git
 mkdir -p ~/.claude/skills
 git clone "$REPO_URL" ~/.claude/skills/smsir-agent-skill
 ```
@@ -144,7 +144,7 @@ Custom Skillها در Claude API نیز قابل آپلود هستند، اما 
 بعد از انتشار repo می‌توانید به خود Agent هم دستور نصب بدهید. نمونه برای Cursor:
 
 ```text
-این Agent Skill را از <YOUR_GITHUB_REPOSITORY_URL> داخل
+این Agent Skill را از https://github.com/fstarlike/smsir-agent-skill.git داخل
 .cursor/skills/smsir-agent-skill نصب کن. بعد SKILL.md را بخوان و از آن
 برای تمام کارهای مربوط به SMS.ir این پروژه استفاده کن. هیچ API Key واقعی را
 داخل سورس یا لاگ قرار نده.
@@ -153,7 +153,7 @@ Custom Skillها در Claude API نیز قابل آپلود هستند، اما 
 نمونه برای Claude Code:
 
 ```text
-این Agent Skill را از <YOUR_GITHUB_REPOSITORY_URL> داخل
+این Agent Skill را از https://github.com/fstarlike/smsir-agent-skill.git داخل
 .claude/skills/smsir-agent-skill نصب کن. سپس SKILL.md را به‌عنوان راهنمای
 SMS.ir این پروژه استفاده کن و فقط reference موردنیاز هر کار را بخوان.
 ```
